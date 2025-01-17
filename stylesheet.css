@@ -1,3 +1,8 @@
+:root {
+  --background-color:#FFFEF7;
+  --green: #688454;
+  --yellow: #FFF4AA;
+}
 
 @font-face {
   font-family: Garamondt-Italic;
@@ -10,7 +15,7 @@
 }
 
 body {
-  background: white;
+  background-color: var(--background-color);
   color: rgba(0,0,0,0.84);
   font-size: 1em;
   line-height: 1.5;
@@ -62,8 +67,8 @@ article {
 
 }
 .green-redacted {
-  color: green;
-  background-color: green;
+  color: var(--green);
+  background-color: var(--green);
   transition: background-color 1s;
 }
 .redacted:hover,
@@ -71,7 +76,7 @@ article {
 .green-redacted:hover,
 .green-redacted:active {
   color: black;
-  background-color: yellow;
+  background-color: var(--yellow);
 }
 
 @media(hover: hover) and (pointer: fine) {
@@ -80,12 +85,12 @@ article {
   .green-redacted:hover,
   .green-redacted:active {
     color: black;
-    background: yellow;
+    background: var(--yellow);
   }
 }
 span.invisible-ink {
-  background: white;
-  color: white;
+  background: var(--background-color);
+  color: var(--background-color);
   /* Vincent Charpentier (@VincentCharpentier) also pointed out a simple rule for true invisibility
   color: rgba(0,0,0,0);*/
 }
