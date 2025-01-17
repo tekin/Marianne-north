@@ -40,18 +40,27 @@ body {
   transition: background-color 1s;
 
 }
-.redacted:hover, .redacted:active {
-  background-color: white;
-}
-
-@media(hover: hover) and (pointer: fine) {
-  .redacted:hover {
-      background: yellow;
-  }
-}
 .green-redacted {
   color: green;
   background-color: green;
+  transition: background-color 1s;
+}
+.redacted:hover,
+.redacted:active,
+.green-redacted:hover,
+.green-redacted:active {
+  color: black;
+  background-color: yellow;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .redacted:hover,
+  .redacted:active,
+  .green-redacted:hover,
+  .green-redacted:active {
+    color: black;
+    background: yellow;
+  }
 }
 span.invisible-ink {
   background: white;
