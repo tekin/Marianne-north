@@ -18,12 +18,22 @@ body {
 }
 
 h1 {
+  font-size: 1.2em;
+  line-height: 2;
   font-family: Garamondt-Italic;
   text-align: center;
 }
-
 h2 {
   font-family: Garamondt-Italic;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 3em;
+}
+h3 {
+  font-family: Garamondt-Italic;
+  font-size: 1.1em;
+  margin-top: 4em;
 }
 body {
   font-family: Junicode-Italic;
