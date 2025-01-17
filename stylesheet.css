@@ -1,0 +1,75 @@
+
+@font-face {
+  font-family: Garamondt-Italic;
+  src: url(fonts/Garamondt-Italic.woff);
+}
+
+@font-face {
+  font-family: Junicode-Italic;
+  src: url(fonts/Junicode-Italic.woff);
+}
+
+body {
+  background: white;
+  color: rgba(0,0,0,0.84);
+  font-size: 20px;
+  line-height: 1.5;
+  padding-top: 1em;
+}
+
+h1 {
+  font-family: Garamondt-Italic;
+  text-align: center;
+}
+
+h2 {
+  font-family: Garamondt-Italic;
+}
+body {
+  font-family: Junicode-Italic;
+}
+
+.redacted {
+  color: black;
+  background-color: black;
+  /* white-space:nowrap; */
+  /* transform: rotate(.8deg) skewx(-12deg);
+  box-shadow:3px 0 2px #444;
+  border:1px dotted #555;
+  background: linear-gradient(180deg, #000, #222); */
+  transition: background-color 1s;
+
+}
+.redacted:hover, .redacted:active {
+  background-color: white;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .redacted:hover {
+      background: yellow;
+  }
+}
+.green-redacted {
+  color: green;
+  background-color: green;
+}
+span.invisible-ink {
+  background: white;
+  color: white;
+  /* Vincent Charpentier (@VincentCharpentier) also pointed out a simple rule for true invisibility
+  color: rgba(0,0,0,0);*/
+}
+
+
+dt {
+  float: left;
+  clear: left;
+  width: 50px;
+  text-align: right;
+  font-weight: bold;
+  /* line-height: 2; */
+}
+dd {
+  margin: 0 0 0 60px;
+  padding: 0 0 0.5em 0;
+}
