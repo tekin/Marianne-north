@@ -56,6 +56,7 @@ article {
  }
 
 .redacted {
+  padding: 3px;
   color: black;
   background-color: black;
   /* white-space:nowrap; */
@@ -67,6 +68,7 @@ article {
 
 }
 .green-redacted {
+  padding: 3px;
   color: var(--green);
   background-color: var(--green);
   transition: background-color 1s;
